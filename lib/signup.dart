@@ -42,6 +42,7 @@ class _State extends State<Signup>{
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextField(
+                      controller: usernameController,
                       decoration: const InputDecoration(
                         labelText: 'Username',
                         border: OutlineInputBorder(
@@ -65,6 +66,7 @@ class _State extends State<Signup>{
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextField(
+                      controller: emailController,
                       keyboardType: TextInputType.emailAddress,
                       decoration: const InputDecoration(
                         labelText: 'E-Mail',
@@ -88,6 +90,7 @@ class _State extends State<Signup>{
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextField(
+                      controller: passwordController,
                       keyboardType: TextInputType.visiblePassword,
                       obscureText: true,
                       decoration: const InputDecoration(
@@ -112,6 +115,7 @@ class _State extends State<Signup>{
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextField(
+                      controller: locationController,
                       decoration: const InputDecoration(
                         labelText: 'Location',
                         border: OutlineInputBorder(
@@ -134,6 +138,7 @@ class _State extends State<Signup>{
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextField(
+                      controller: phoneController,
                       keyboardType: TextInputType.phone,
                       decoration: const InputDecoration(
                         labelText: 'Phone',
