@@ -3,10 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:trees_go/Choice.dart';
 import 'package:trees_go/signup.dart';
-
-import 'LoginPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -79,7 +76,7 @@ class MyHomePage extends StatelessWidget{
                       ),
                       label: Text('Login'),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginPage()));
+                        //Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Login()));
                         },
                       icon: Icon(Icons.arrow_forward),
                     ),
