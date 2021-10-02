@@ -39,6 +39,7 @@ class Signup_Class extends StatelessWidget{
                   width: MediaQuery.of(context).size.width*0.8,
                   child: TextField(
                     decoration: const InputDecoration(
+                      labelText: 'Username',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
@@ -56,6 +57,7 @@ class Signup_Class extends StatelessWidget{
                   child: TextField(
                     keyboardType: TextInputType.emailAddress,
                     decoration: const InputDecoration(
+                      labelText: 'E-Mail',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
@@ -73,6 +75,7 @@ class Signup_Class extends StatelessWidget{
                   child: TextField(
                     keyboardType: TextInputType.visiblePassword,
                     decoration: const InputDecoration(
+                      labelText: 'Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
@@ -89,6 +92,7 @@ class Signup_Class extends StatelessWidget{
                   width: MediaQuery.of(context).size.width*0.8,
                   child: TextField(
                     decoration: const InputDecoration(
+                      labelText: 'Location',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
@@ -106,6 +110,7 @@ class Signup_Class extends StatelessWidget{
                   child: TextField(
                     keyboardType: TextInputType.phone,
                     decoration: const InputDecoration(
+                      labelText: 'Phone',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
