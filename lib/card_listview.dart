@@ -26,7 +26,7 @@ class _CardsState extends State<CardsView> {
     var gender = 'Gender of pet';
     return Card(
         elevation: 15.0,
-        color: Color(0xffF3EAC2),
+        color: Colors.white,
         child: Column(
           children: [
             ListTile(title: Text(name,
@@ -71,7 +71,7 @@ class _CardsState extends State<CardsView> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xffF3EAC2),
+        backgroundColor: Colors.white,
         body: ListView.builder(
             itemCount: _cards,
             itemBuilder: (context, index) {

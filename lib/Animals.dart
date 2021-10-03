@@ -18,7 +18,17 @@ class _AnimalsState extends State<Animals> {
           padding: EdgeInsets.all(10),
           child: ListView(
             children: [
-              Text('What are you looking for today?'),
+              Padding(
+                padding: const EdgeInsets.only(top: 16.0, left: 8.0,bottom: 16.0),
+                child: Text(
+                  'What are you looking for today?',
+                  style: TextStyle(
+                    color: Color(0xffEC524B),
+                    fontSize: 25,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
               ElevatedButton(
                   onPressed: () {},
                   onLongPress: () {},
@@ -44,8 +54,8 @@ class _AnimalsState extends State<Animals> {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => CardsView()));
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => CardsView()));
                   },
                   onLongPress: () {},
                   style: ButtonStyle(
