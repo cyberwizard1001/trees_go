@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trees_go/card_listview.dart';
 
 class Animals extends StatefulWidget {
   const Animals({Key? key}) : super(key: key);
@@ -42,7 +43,10 @@ class _AnimalsState extends State<Animals> {
                 height: 30,
               ),
               ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => CardsView()));
+                  },
                   onLongPress: () {},
                   style: ButtonStyle(
                       backgroundColor:
