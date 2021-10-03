@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cool app name',
-      home: User(),
+      home: MyHomePage(),
         );
   }
 }
