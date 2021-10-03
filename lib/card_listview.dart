@@ -29,7 +29,9 @@ class _CardsState extends State<CardsView> {
         color: Color(0xffF3EAC2),
         child: Column(
           children: [
-            ListTile(title: Text(name), subtitle: Text(breed)),
+            ListTile(title: Text(name,
+              style: TextStyle(color: Color(0xffEC524B),fontSize: 25),),
+                subtitle: Text(breed, style: TextStyle(color: Color(0xffEC524B),fontSize: 15),)),
             Container(
               height: 300.0,
               child: Ink.image(
@@ -38,9 +40,10 @@ class _CardsState extends State<CardsView> {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.only(left: 15.0, top: 15.0),
               alignment: Alignment.centerLeft,
-              child: Text(gender),
+              child: Text(gender,
+              style: TextStyle(color: Color(0xffEC524B),fontSize: 20),),
             ),
             Container(
               padding: EdgeInsets.only(bottom: 20.0,right: 15.0),
