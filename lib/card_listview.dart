@@ -25,7 +25,10 @@ class _CardsState extends State<CardsView> {
     var breed = 'Breed of pet';
     var gender = 'Gender of pet';
     return Card(
-        elevation: 15.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25.0),
+        ),
+        elevation: 5.0,
         color: Colors.white,
         child: Column(
           children: [
@@ -72,11 +75,16 @@ class _CardsState extends State<CardsView> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: ListView.builder(
-            itemCount: _cards,
-            itemBuilder: (context, index) {
-              return buildCard(index);
-            }),
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: ListView.builder(
+                itemCount: _cards,
+                itemBuilder: (context, index) {
+                  return buildCard(index);
+                }),
+          ),
+        ),
       ),
     );
   }
