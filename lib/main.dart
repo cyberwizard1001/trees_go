@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:trees_go/LoginPage.dart';
 import 'package:trees_go/signup.dart';
 
+import 'User.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cool app name',
-      home: MyHomePage(),
+      home: User(),
         );
   }
 }

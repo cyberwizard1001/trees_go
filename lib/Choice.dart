@@ -32,7 +32,7 @@ class _ChoiceState extends State<Choice> {
       body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color(0xffEC524B),
-        selectedItemColor: Color(0xff9AD3BC),
+        selectedItemColor: Color(0xff9ad3bc),
         unselectedItemColor: Colors.white,
         onTap: onTabTapped,
         currentIndex: _currentIndex,

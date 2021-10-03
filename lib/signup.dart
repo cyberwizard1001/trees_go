@@ -200,7 +200,7 @@ class _State extends State<Signup> {
                       Text(
                         'Have an account already?',
                         style: TextStyle(
-                          color: Color(0xffC0791E),
+                          color: Color(0xffc0791e),
                         ),
                       ),
                       FlatButton(

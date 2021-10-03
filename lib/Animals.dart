@@ -80,7 +80,7 @@ class _AnimalsState extends State<Animals> {
                   onLongPress: () {},
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all<Color>(Color(0xff9AD3BC)),
+                          MaterialStateProperty.all<Color>(Color(0xff9ad3bc)),
                       elevation: MaterialStateProperty.all<double>(20),
                       shape: MaterialStateProperty.all<OutlinedBorder>(
                           CircleBorder())),
