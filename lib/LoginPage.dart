@@ -99,7 +99,6 @@ class _LoginPageState extends State<LoginPage> {
                         height: 50,
                         padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                         child: SizedBox(
-                          width: MediaQuery.of(context).size.width*0.3,
                           child: ElevatedButton.icon(
                             label: Text('Login'),
                             icon: Icon(Icons.keyboard_arrow_right_sharp),

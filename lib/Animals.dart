@@ -10,13 +10,13 @@ class _AnimalsState extends State<Animals> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF5B461),
+      backgroundColor: Color(0xffF3EAC2),
       body:  SafeArea(
         child: Padding(
           padding: EdgeInsets.all(10),
           child: ListView(
             children: [
-
+              Text('What are you looking for today?'),
               ElevatedButton(onPressed: (){},
                   onLongPress: (){},
                   style: ButtonStyle(

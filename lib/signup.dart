@@ -1,12 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:trees_go/main.dart';
+import 'package:trees_go/LoginPage.dart';
 
 class Signup extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Signup>{
+class VerticalText extends StatefulWidget {
+  @override
+  _VerticalTextState createState() => _VerticalTextState();
+}
+
+class _VerticalTextState extends State<VerticalText> {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 20, right: 330),
+      child: RotatedBox(
+          quarterTurns: -1,
+          child: Text(
+            'Sign Up',
+            style: TextStyle(
+              color: Color(0xffEC524B),
+              fontSize: 38,
+              fontWeight: FontWeight.w900,
+            ),
+          )),
+    );
+  }
+}
+
+class _State extends State<Signup> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController usernameController = TextEditingController();
@@ -23,18 +47,7 @@ class _State extends State<Signup>{
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
-                  height: 100,
-                ),
-                Text(
-                  'Sign Up!',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Color(0xffEC524B),
-                  ),
-                ),
                 SizedBox(
                   height: 50,
                 ),
@@ -48,7 +61,8 @@ class _State extends State<Signup>{
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(20),
-                          ),),
+                          ),
+                        ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: const BorderSide(
@@ -72,7 +86,7 @@ class _State extends State<Signup>{
                         labelText: 'E-Mail',
                         border: OutlineInputBorder(
                             borderRadius:
-                            BorderRadius.all(Radius.circular(20))),
+                                BorderRadius.all(Radius.circular(20))),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: const BorderSide(
@@ -97,7 +111,7 @@ class _State extends State<Signup>{
                         labelText: 'Password',
                         border: OutlineInputBorder(
                             borderRadius:
-                            BorderRadius.all(Radius.circular(20))),
+                                BorderRadius.all(Radius.circular(20))),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: const BorderSide(
@@ -120,7 +134,7 @@ class _State extends State<Signup>{
                         labelText: 'Location',
                         border: OutlineInputBorder(
                             borderRadius:
-                            BorderRadius.all(Radius.circular(20))),
+                                BorderRadius.all(Radius.circular(20))),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: const BorderSide(
@@ -144,7 +158,7 @@ class _State extends State<Signup>{
                         labelText: 'Phone',
                         border: OutlineInputBorder(
                             borderRadius:
-                            BorderRadius.all(Radius.circular(20))),
+                                BorderRadius.all(Radius.circular(20))),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: const BorderSide(
@@ -156,7 +170,7 @@ class _State extends State<Signup>{
                   ),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 Center(
                   child: ElevatedButton.icon(
@@ -175,7 +189,40 @@ class _State extends State<Signup>{
                     },
                     icon: Icon(Icons.assignment_turned_in),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Have an account already?',
+                        style: TextStyle(
+                          color: Color(0xffC0791E),
+                        ),
+                      ),
+                      FlatButton(
+                        child: Container(
+                          child: Text(
+                            'Sign in',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color(0xffEC524B),
+                            ),
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => LoginPage()));
+                          //signup screen
+                        },
+                      )
+                    ],
+                  ),
+                ),
+                VerticalText(),
               ],
             ),
           ),
@@ -184,5 +231,3 @@ class _State extends State<Signup>{
     );
   }
 }
-
-
