@@ -42,8 +42,8 @@ class _ChoiceState extends State<Choice> {
             title: Text('Find animals'),
           ),
           new BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
-            title: Text('Messages'),
+            icon: Icon(Icons.account_box_outlined),
+            title: Text('Profile'),
           ),
         ],
       ),

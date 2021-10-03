@@ -12,23 +12,24 @@ class _AnimalsState extends State<Animals> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF3EAC2),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Color(0xffEC524B),
+        toolbarHeight: 80,
+        title: Text(
+          'Choose a category',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(10),
           child: ListView(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 16.0, left: 8.0,bottom: 16.0),
-                child: Text(
-                  'What are you looking for today?',
-                  style: TextStyle(
-                    color: Color(0xffEC524B),
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ),
               ElevatedButton(
                   onPressed: () {},
                   onLongPress: () {},
@@ -38,7 +39,6 @@ class _AnimalsState extends State<Animals> {
                       elevation: MaterialStateProperty.all<double>(20),
                       shadowColor:
                           MaterialStateProperty.all<Color>(Color(0xffEC524B)),
-                      //padding:  MaterialStateProperty.all<EdgeInsetsGeometry>(),
                       shape: MaterialStateProperty.all<OutlinedBorder>(
                           CircleBorder())),
                   child: ClipRRect(
